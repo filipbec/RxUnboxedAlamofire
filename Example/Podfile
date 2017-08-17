@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxUnboxedAlamofire_Example' do
+  pod 'RxUnboxedAlamofire', :path => '../'
+
+  target 'RxUnboxedAlamofire_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
