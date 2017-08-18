@@ -1,6 +1,5 @@
 # RxUnboxedAlamofire
 
-[![CI Status](http://img.shields.io/travis/Filip Beć/RxUnboxedAlamofire.svg?style=flat)](https://travis-ci.org/Filip Beć/RxUnboxedAlamofire)
 [![Version](https://img.shields.io/cocoapods/v/RxUnboxedAlamofire.svg?style=flat)](http://cocoapods.org/pods/RxUnboxedAlamofire)
 [![License](https://img.shields.io/cocoapods/l/RxUnboxedAlamofire.svg?style=flat)](http://cocoapods.org/pods/RxUnboxedAlamofire)
 [![Platform](https://img.shields.io/cocoapods/p/RxUnboxedAlamofire.svg?style=flat)](http://cocoapods.org/pods/RxUnboxedAlamofire)
