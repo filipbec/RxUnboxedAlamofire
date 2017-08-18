@@ -33,21 +33,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
         let url = "https://jsonplaceholder.typicode.com/users/1"
 
         requestObject(.get, url)
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { (response: (HTTPURLResponse, Person)) in
                 print(response)
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
 
 
         SessionManager.default.rx
             .object(.get, url)
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { (person: Person) in
                 print(person)
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
 
 
         SessionManager.default.rx
@@ -60,13 +63,8 @@ class ViewController: UIViewController {
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { (person: Person) in
                 print(person)
-            }).disposed(by: disposeBag)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+            })
+            .disposed(by: disposeBag)
     }
 
 }
-
