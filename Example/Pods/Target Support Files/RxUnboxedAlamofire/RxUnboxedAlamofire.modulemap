@@ -1,0 +1,6 @@
+framework module RxUnboxedAlamofire {
+  umbrella header "RxUnboxedAlamofire-umbrella.h"
+
+  export *
+  module * { export * }
+}
